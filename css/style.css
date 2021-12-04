@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{list-style: none;}
+img{max-width: 100%;}
+
+#wrap{
+    width: 80% /* 1080px */;
+    margin: 0 auto;
+}
+
+header{
+    position: fixed;
+    padding: 0.7em;
+    z-index: 100;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+.hScroll{
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+header .logo{display: inline-block;}
+
+header nav{
+    float: right;
+    padding: 0.5em 0;
+}
+
+header nav ul{display: flex;}
+header nav ul li ul{display: none;}
+
+header nav ul li{margin: 0 0.6em;}
+
+.main{
+    width: 100%;
+    height: 26em/* 400px */;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .slid{
+    position: relative;
+    width: 300%;
+    height: 100%;
+}
+
+.main .slid ul{display: flex;}
+.main .slid ul li{width: 100%;}
+
+.main .slid ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: .8;
+}
+
+.main h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    color: #fff;
+    padding: .4em;
+    border: 2px solid #000;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.main .btn{
+    position: absolute;
+    font-size: 3em;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.main .btn a{
+    padding: 0 .1em;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all .4s;
+}
+
+.main .btn:hover a{
+    background-color: rgba(0, 0, 0, 0.397);
+    color: #fff;
+}
+
+.main .prev{left: .8em;}
+.main .next{right: .8em;}
+
+.contents{
+    width: 100%; 
+    margin-right: 50px;
+    border-radius: 90% / 35%;
+    position: relative;
+    top: -4em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contents .ball{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 50%;
+}
+
+.contents .ball .inBall{
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 1.8em;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+
+.contents ul{
+    padding-top: 5.5em;
+    display: flex;
+}
+
+.contents ul li{
+    width: 27.777% /* 300px */;
+    padding: 0 2.1em;
+}
+
+.contents ul li img{
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.contents ul li dt{
+    font: 1.4em bold;
+    line-height: 1.6em;
+}
+.contents ul li dd{font-size: 1.1em;}
