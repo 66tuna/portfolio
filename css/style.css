@@ -21,10 +21,12 @@ img{
     width: 1160px;
     margin: 0 auto;
 }
-
+/* header */
 #headerWrap{
     width: 100%;
     padding: 20px 0;
+    position: fixed;    
+    z-index: 100;
 }
 
 #headerWrap header{
@@ -37,6 +39,10 @@ img{
 
 #headerWrap nav{
     float: right;
+}
+
+#headerWrap nav>ul{
+    line-height: 50px;
 }
 
 header nav ul>li{
@@ -53,3 +59,16 @@ header ul li a{
     display: none;
 }
 
+.hScroll{
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+
+/* box01 */
+#wrap>#box01{
+    height: 100vh;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0; left: 0;
+    padding: 0;   
+}
