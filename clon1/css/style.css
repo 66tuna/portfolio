@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-img {
-    max-width: 100%;
+    box-sizing: border-box;
 }
 
 #wrap {
@@ -18,23 +15,21 @@ img {
 #wrap>#box03,
 #wrap>#box04 {
     width: 100%;
-    padding: 72px 0;
 }
 
-#wrap article,
 #wrap header,
 #wrap footer {
-    width: 1160px;
+    width: 80% /* 1160px */;
     margin: 0 auto;
 }
 
 /* header */
 #headerWrap {
     width: 100%;
-    padding: 20px 0;
     position: fixed;
     z-index: 100;
     transition: all .4s;
+    padding: 20px 0;
 }
 
 #headerWrap header {
@@ -46,16 +41,23 @@ img {
     display: flex;
 }
 
-header nav ul>li {
+header ul>li {
     display: inline-block;
-    margin-left: 33px;
+    margin: 0 16px;
     text-transform:uppercase;
+    vertical-align: middle;
+    line-height: 100px;
+    transition: all .2s;
+}
+#headerWrap>header:first-child>ul>li:hover{ /* 밑줄 질문하기 */
+    border-bottom: 2px solid #fff;
 }
 
 header ul li a{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 18px;
 }
 
 #headerWrap>header>ul>li>ul {
@@ -64,6 +66,10 @@ header ul li a{
 
 .hScroll {
     background-color: #fff;
+}
+
+.imgCenter{
+    margin-top: 38px;
 }
 
 /* box01 */
@@ -83,9 +89,194 @@ header ul li a{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 2.5em;
     color: #fff;
-    padding: 1.2em 3.1em;
-    /* border: 2px solid #000; */
+    padding: 1.2em 2.1em;
     background-color: rgba(0, 0, 0, 0.61);
+}
+
+
+/* box02 */
+#wrap>#box02{
+    height: 888px;
+}
+
+#wrap>#box02>article{
+    display: flex;
+    height: inherit;
+}
+
+#box02 .leftBox{
+    width: 50%;
+    background-color: #e2e1dd;
+    height: inherit;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 10%;
+}
+
+#box02 .leftBox .in{
+    display: table;
+    height: inherit;
+    width: 100%;
+    position: relative;
+}
+
+#box02 .leftBox .in .in_box{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+#box02 .leftBox .in .in_box h3{
+    font: 40px 'MB',sans-serif;
+    line-height: 44px;
+    padding: 30px 0 20px;
+    position: relative;
+    letter-spacing: 5px;
+}
+#box02 .leftBox .in .in_box h3::after{
+    content: "";
+    display: block;
+    border-top: 1px solid #a79678;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#box02 .leftBox .in .in_box strong{
+    color: #1d1d1d;
+    font-size: 40px;
+    list-style: 44px;
+    font-weight: 500;
+    display: block;
+}
+
+#box02 .leftBox .in .in_box strong span{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #9b7b51;
+    display: block;
+    margin: 10px 0 20px;
+}
+
+#box02 .leftBox .in .in_box em{
+    margin: 30px 0;
+    font-weight: 500;
+    font-size: 26px;
+    display: block;
+}
+
+#box02 .leftBox .in .in_box p{
+    font-size: 17px;
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 2.64em;
+}
+
+#box02 .leftBox .in_rolling{
+    width: 600px;
+    position: relative;
+    z-index: 5;
+}
+
+#box02 .leftBox .in_rolling .in{
+    height: 310px;
+    display: block;
+    position: relative;
+}
+
+#box02 .leftBox .in_rolling .in>.on{
+    z-index: 5;
+    opacity: 1;
+}
+
+#box02 .leftBox .in_rolling .in>div{
+    width: 600px;
+    min-height: 480px;
+    position: absolute;
+    left: 0; top: 0;
+    opacity: 0;
+    z-index: 3;
+    transition: all .7s ease-in-out;
+}
+
+#box02 .leftBox .in_rolling .in>div>a{
+    display: inline-block;
+    background-color: #2d2d2d;
+    padding: 30px 80px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 200;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    left: 250px;
+    bottom: 35px;
+    text-decoration: none;
+}
+#box02 .leftBox .in_rolling .in>div>a:hover{
+    background-color: #9b7b52;
+}
+
+#box02 .leftBox .btn_box{
+    position: absolute;
+    left: 0;
+    bottom: 115px;
+    z-index: 15;
+}
+
+#box02 .leftBox .btn_box button:first-child{
+    margin-left: 0;
+}
+#box02 .leftBox .btn_box button{
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 74px;
+    overflow: hidden;
+    vertical-align: top;
+    border: none;
+}
+#box02 .leftBox button:hover img{
+    margin-top: -74px;
+}
+
+#box02 .rightBox{
+    width: 50%;
+    height: inherit;
+}
+
+#box02 .rightBox .in_rolling .in, #box02 .rightBox .in_rolling{
+    width: 100%;
+    height: inherit;
+}
+
+#box02 .rightBox .in_rolling .in{
+    position: relative;
+}
+
+#box02 .rightBox .in_rolling .in>.on{
+    z-index: 5;
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+#box02 .rightBox .in_rolling .in>div{
+    position: absolute;
+    left: 0; top: 0;
+    overflow: hidden;
+    bottom: 0;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+#box02 .rightBox img{
+    transition: all .4s ease-in-out;
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
 }
