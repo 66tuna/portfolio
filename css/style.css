@@ -27,6 +27,7 @@ img{
     padding: 20px 0;
     position: fixed;    
     z-index: 100;
+    transition: all .3s;
 }
 
 #headerWrap header{
@@ -66,9 +67,30 @@ header ul li a{
 
 /* box01 */
 #wrap>#box01{
-    height: 100vh;
+    width: 100%;
     box-sizing: border-box;
-    position: absolute;
-    top: 0; left: 0;
-    padding: 0;   
+    padding: 0;
+}
+
+#wrap #box01 article{
+    width: 100%;
+    margin: 0;
+}
+
+#box01 .slid{
+    overflow: hidden;
+}
+
+#box01 ul{
+    width: 300%;
+    display: flex;
+}
+
+#box01 ul>li{
+    width: 100%;
+}
+
+#box01 ul>li>img{
+    width: 100%;
+    height: 100%;
 }
