@@ -1,0 +1,6 @@
+하면서 알게된 점
+height: inherit;
+display: table;
+display: table-cell;
+:after활용
+레이아웃을 이렇게도 짤수 있다라는 것을 알게 되었다

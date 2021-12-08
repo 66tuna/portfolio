@@ -1,3 +1,4 @@
+// header scroll
 $(window).on('scroll', function (e) {
     let str = $('html, body').scrollTop();
     if (str >= 100) {
@@ -12,20 +13,47 @@ $(window).on('scroll', function (e) {
 });
 
 $(function(){
+    // opacity
     $('#box02 .leftBox .in_rolling .in>div:first').addClass('on');
     $('#box02 .rightBox .in>div:first').addClass('on');
 
+    var cnt = 0; /* min 0 max 4 */
     $('#box02 .leftBox .in_box>.btn_box>.next').on('click',function () { 
         let left = '#box02 .leftBox .in_rolling .in>div';
         let right = '#box02 .rightBox .in>div';
-        let cnt = 0;
 
         $(left).removeClass('on');
         $(right).removeClass('on');
-
-        for(var str of $(left)){
-            return str;
-        }
         
+        cnt++;
+        if(cnt < 5){
+            $(left).eq(cnt).addClass('on');
+            $(right).eq(cnt).addClass('on');
+        }else if(cnt >= 5){
+            cnt = 0;
+            $(left).eq(cnt).addClass('on');
+            $(right).eq(cnt).addClass('on');
+        }
+        return cnt;
+        
+    });
+
+    $('#box02 .leftBox .in_box>.btn_box>.prev').on('click',function () { 
+        let left = '#box02 .leftBox .in_rolling .in>div';
+        let right = '#box02 .rightBox .in>div';
+
+        $(left).removeClass('on');
+        $(right).removeClass('on');
+        
+        cnt--;
+        if(cnt >= 0 && cnt < 5){
+            $(left).eq(cnt).addClass('on');
+            $(right).eq(cnt).addClass('on');
+        }else if(cnt < 0){
+            cnt = 4;
+            $(left).eq(cnt).addClass('on');
+            $(right).eq(cnt).addClass('on');
+        }
+        return cnt;
     });
 })
