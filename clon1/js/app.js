@@ -1,7 +1,7 @@
 // header scroll
 $(window).on('scroll', function (e) {
     let srt = $('html, body').scrollTop();
-    console.log(srt);
+    // console.log(srt);
 
     // header srt
     if (srt >= 100) {
@@ -16,24 +16,19 @@ $(window).on('scroll', function (e) {
 
     // box05 srt
 
-    if(srt >= 2800 && srt <= 4218){
+    if(srt >= 3300 && srt <= 4218){
         setTimeout(() => {
             $('#box05>article>h3').fadeIn(600);
-        }, 300);
+        }, 500);
         setTimeout(() => {
-            $('#box05>article>span').fadeIn(800);
-        }, 300);
+            $('#box05>article>.show>span').fadeIn(800);
+        }, 1000);
         setTimeout(() => {
-            $('#box05>article>p').fadeIn(1000);
-        }, 300);
+            $('#box05>article>.show>p').fadeIn(1000);
+        }, 1000);
         setTimeout(() => {
-            $('#box05>article>a').fadeIn(1000);
-        }, 300);
-    }else{
-        $('#box05>article>h3').hide();
-        $('#box05>article>span').hide();
-        $('#box05>article>p').hide();
-        $('#box05>article>a').hide();
+            $('#box05>article>.show>a').fadeIn(1000);
+        }, 1000);
     }
 
     //box06 srt

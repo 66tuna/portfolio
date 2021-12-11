@@ -325,10 +325,15 @@ header ul li a{
 }
 
 #box03 ul li{
+    width: 20vmax/* 350px */;
     float: left;
     position: absolute;
     left: 0; top: 0;
     transition: all .4s ease-in-out;
+}
+
+#box03 ul li img{
+    width: 100%;
 }
 
 #box03 ul li:nth-child(1){
@@ -443,6 +448,7 @@ header ul li a{
     color: #fff;
     position: absolute;
     top: 150px; left: 10%;
+    display: none;
 }
 #box05 h3:after{
     content: "";
@@ -452,14 +458,21 @@ header ul li a{
     top: 0; left: 0;
 }
 
+#box05 .show{
+    width: 700px;
+    position: absolute;
+    top: 50%; right: 30px;
+    transform: translate(0, -50%);
+}
+
 #box05 span{
-    display: block;
     font-size: 32px;
     line-height: 30px;
     margin-top: 250px;
     padding: 30px 0;
     color: #fff;
     position: relative;
+    display: none;
 }
 
 #box05 p{
@@ -468,6 +481,7 @@ header ul li a{
     font-weight: 300;
     line-height: 27px;
     width: 85%;
+    display: none;
 }
 
 #box05 a{
@@ -477,6 +491,7 @@ header ul li a{
     background-color: #2d2a24;
     color: #fff;
     text-decoration: none;
+    display: none;
     
 }
 #box05 a:hover{
@@ -504,9 +519,6 @@ header ul li a{
     height: 210px;
     float: left;
     margin: 0 10px;
-}
-#box06 ul li:first-child, #box06 ul li:nth-child(6){
-    margin-left: 30px;
 }
 
 #box06 ul img{
