@@ -6,18 +6,20 @@ function scrollT(){
 
         // header srt
         if (srt >= 100) {
-            $('#headerWrap').addClass('hScroll').css('padding', '0');
-            $('header>h1>img').attr('src', './images/logo_on.png').addClass('imgCenter');
-            $('header>ul>li>a').css('color', '#000');
+            $('#headerWrap').addClass('hScroll');
+            $('header>h1>img').attr('src', './images/logo_on.png').addClass('imgContent');
+            $('header ul>li>a').css('color', '#000');
             $('#headerWrap>header>ul>li>div>span').css({
                 backgroundColor: '#000',
                 top: '-10px'
             });
+            $('nav>ul').addClass('smallT');
         } else if (srt < 100) {
-            $('#headerWrap').removeClass('hScroll').css('paddingTop', '20px');
-            $('header>h1>img').attr('src', './images/logo.png').removeClass('imgCenter');
-            $('header>ul>li>a').css('color', '#fff');
+            $('#headerWrap').removeClass('hScroll')
+            $('header>h1>img').attr('src', './images/logo.png').removeClass('imgContent');
+            $('header ul>li>a').css('color', '#fff');
             $('#headerWrap>header>ul>li>div>span').css("backgroundColor", '#fff');
+            $('nav>ul').removeClass('smallT');
         }
 
         // box05 srt
