@@ -8,7 +8,10 @@ function scrollT(){
         if (srt >= 100) {
             $('#headerWrap').addClass('hScroll');
             $('header>h1>img').attr('src', './images/logo_on.png').addClass('imgContent');
-            $('header ul>li>a').css('color', '#000');
+            $('header ul>li>a').css({
+                color: '#000',
+                fontSize: '.8em'
+            });
             $('#headerWrap>header>ul>li>div>span').css({
                 backgroundColor: '#000',
                 top: '-10px'
@@ -17,7 +20,10 @@ function scrollT(){
         } else if (srt < 100) {
             $('#headerWrap').removeClass('hScroll')
             $('header>h1>img').attr('src', './images/logo.png').removeClass('imgContent');
-            $('header ul>li>a').css('color', '#fff');
+            $('header ul>li>a').css({
+                color: '#fff',
+                fontSize: '1.1em'
+            });
             $('#headerWrap>header>ul>li>div>span').css("backgroundColor", '#fff');
             $('nav>ul').removeClass('smallT');
         }

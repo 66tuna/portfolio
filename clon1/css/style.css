@@ -56,7 +56,7 @@ header ul{
 #headerWrap header>ul:nth-child(2) {
     display: flex;
 }
-#headerWrap header>ul:nth-child(2)>li>a{padding-right:68px;}
+#headerWrap header>ul:nth-child(2)>li>a{padding-right:50px;}
 header ul>li {
     /* display: inline-block; */
     margin: 0 16px;
@@ -334,6 +334,7 @@ header ul li a{
 /* box03 */
 #box03{
     background-color: #efefef;
+    overflow: hidden;
 }
 
 #box03 article{
@@ -365,7 +366,7 @@ header ul li a{
 }
 
 #box03 ul{
-    width: 80%;
+    width: 80%; /* 1336 622 */
     margin: 0 auto;
     position: relative;
 }
