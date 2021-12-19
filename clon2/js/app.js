@@ -65,7 +65,7 @@ function slidr() {
         });
     }
 
-    // setInterval(ani, 4000);
+    setInterval(ani, 4000);
 }
 
 function navBtn() {
