@@ -8,11 +8,7 @@ function scrollH(){
                 position: 'fixed'
             });
             $('#headerWrap h1>img').attr('src', './images/logoB.png');
-            $('header nav>ul>li>a').css('color', '#545454').hover(function(){
-                $(this).css('color', '#000');
-            }, function(){
-                $(this).css('color', '#545454');
-            });
+            $('#btn span').css('backgroundColor', '#000');
         }else{
             $('#headerWrap').css({
                 backgroundColor: 'rgba(255,255,255,0)',
@@ -20,11 +16,7 @@ function scrollH(){
                 position: 'absolute'
             });
             $('#headerWrap h1>img').attr('src', './images/logo.png');
-            $('header nav>ul>li>a').css('color', '#dadada').hover(function(){
-                $(this).css('color', '#fff');
-            }, function(){
-                $(this).css('color', '#dadada');
-            });
+            $('#btn span').css('backgroundColor', '#fff');
         }
     })
 }
@@ -73,7 +65,7 @@ function slidr() {
         });
     }
 
-    setInterval(ani, 4000);
+    // setInterval(ani, 4000);
 }
 
 function navBtn() {
@@ -84,12 +76,12 @@ function navBtn() {
         $('#headerWrap .close').show();
     })
 
-    $('#headerWrap .close').on('click', function () {
-        let navW = $(this).parents().innerWidth();
+    $('#headerWrap .close, .back').on('click', function () {
+        let navW = $('#headerWrap .close').parents().innerWidth();
         $('#headerWrap nav').animate({ left: `-${navW}px` }, 400, function () {
             $('#btn').show();
         });
-        $(this).hide();
+        $('#headerWrap .close').hide();
         $('.back').hide();
     })
 }
