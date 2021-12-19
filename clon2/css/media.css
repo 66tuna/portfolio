@@ -1,0 +1,155 @@
+@media screen and (min-width: 1320px) {
+    #wrap>div>article{
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1319px) and (min-width: 1000px){
+    #wrap>div>article{
+        width: 90%;
+        padding: 0 2em;
+    }
+
+    /* header */
+    #headerWrap header h1{
+        float: none;
+        text-align: center;
+    }
+
+    #headerWrap header nav{
+        padding-top: 0;
+        position: fixed;
+        left: -350px; top: 0;
+        width: 350px;
+        height: 100vh;
+        padding: 0 25px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.938);
+        z-index: 2000;
+    }
+
+    #headerWrap>header>nav>ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 50%; top: 40px;
+        transform: translate(-50%, 0);
+    }
+    #headerWrap>header>nav>ul:nth-child(2){
+        top: 70%;
+        left: 50%;
+    }
+
+    header nav>ul>li{
+        display: block;
+        padding: .3em 0;
+    }
+
+    header nav .loginSign{
+        display: block;
+    }
+
+    header nav>ul>li>a{color: #545454;}
+    header nav>ul>li>a:hover{color: #000;}
+
+    header ul:nth-child(1)>li{font-size: 1.5em;}
+
+    #btn{display: block;}
+
+    /* box01 */
+    #wrap>#box01>article{padding: 0;}
+    #box01 ul>li:nth-child(1) h1 {padding-top: 0;}
+    
+    /* box03 */
+    #wrap>#box03>article{
+        width: 90%;
+    }
+    #box03 .vid{margin-right: 1.2em;}
+    #box .lBox{padding-right: 10em;}
+
+    /* box06 */
+    #wrap>#box06{
+        display: none;
+    }
+
+    /* footer */
+    #footerWrap>footer>p{font-size: .8em;}
+/*  */
+}
+
+@media screen and (max-width: 999px) and (min-width: 480px){
+    #wrap>div>article{
+        width: 80%;
+    }
+
+    /* header */
+    #headerWrap header h1{
+        float: none;
+        text-align: center;
+    }
+
+    #headerWrap header nav{
+        padding-top: 0;
+        position: fixed;
+        left: -350px; top: 0;
+        width: 350px;
+        height: 100vh;
+        padding: 0 25px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.938);
+        z-index: 2000;
+    }
+
+    #headerWrap>header>nav>ul{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 50%; top: 40px;
+        transform: translate(-50%, 0);
+    }
+    #headerWrap>header>nav>ul:nth-child(2){
+        top: 70%;
+        left: 50%;
+    }
+
+    header nav>ul>li{
+        display: block;
+        padding: .3em 0;
+    }
+
+    header nav .loginSign{
+        display: block;
+    }
+
+    header nav>ul>li>a{color: #545454;}
+    header nav>ul>li>a:hover{color: #000;}
+
+    header ul:nth-child(1)>li{font-size: 1.5em;}
+
+    #btn{display: block;}
+
+    /* box01 */
+    #box01 ul>li:nth-child(1) h1 {padding-top: 0;}
+
+    /* box03 */
+    #box03 article{
+        display: block;
+    }
+    
+    #box03 .vid{display: none;}
+    
+    #box03 .rBox{
+        text-align: center;
+    }
+    /* box06 */
+    #box06{
+        display: none;
+    }
+
+    /* footer */
+    #footerWrap>footer>p{
+        font-size: .3em;
+        line-height: .2em;
+    }
+/*  */
+}
