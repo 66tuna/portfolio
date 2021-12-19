@@ -12,13 +12,13 @@
 
     /* header */
     #box01 .textWrap{
-        padding-top: 16em;
+        padding: 20em 0;
     }
     #box01 .second>.textWrap{
-        padding-top: 14em;
+        padding: 20em 0;
     }
     #box01 .third>.textWrap{
-        padding-top: 10em;
+        padding: 15em 0;
     }
 
     #headerWrap header h1{
@@ -34,7 +34,7 @@
         height: 100vh;
         padding: 0 25px;
         box-sizing: border-box;
-        background-color: #ffffff;
+        background-color: #5e5e5e;
         z-index: 2000;
     }
 
@@ -59,8 +59,8 @@
         display: block;
     }
 
-    header nav>ul>li>a{color: #545454;}
-    header nav>ul>li>a:hover{color: #000;}
+    header nav>ul>li>a{color: #dadada;}
+    header nav>ul>li>a:hover{color: #fff;}
 
     header ul:nth-child(1)>li{font-size: 1.5em;}
 
@@ -108,7 +108,7 @@
         height: 100vh;
         padding: 0 25px;
         box-sizing: border-box;
-        background-color: rgba(255, 255, 255, 0.938);
+        background-color: #5e5e5e;
         z-index: 2000;
     }
 
@@ -142,13 +142,16 @@
 
     /* box01 */
     #box01 .textWrap{
-        padding-top: 16em;
+        padding-top: 20em;
     }
     #box01 .second>.textWrap{
-        padding-top: 5em;
+        padding-top: 18em;
     }
     #box01 .third>.textWrap{
-        padding-top: 10em;
+        padding-top: 18em;
+    }
+    #box01 ul>li>.textWrap h1,#box01 ul>li>.textWrap h3{
+        font-size: 2em;
     }
     #box01 ul>li.first h1 {padding-top: 0;}
 

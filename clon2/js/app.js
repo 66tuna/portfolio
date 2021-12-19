@@ -8,6 +8,11 @@ function scrollH(){
                 position: 'fixed'
             });
             $('#headerWrap h1>img').attr('src', './images/logoB.png');
+            $('#headerWrap nav>ul>li>a').css('color', '#545454').hover(function(){
+                $(this).css('color', '#000');
+            }, function(){
+                $(this).css('color', '#545454');
+            });
             $('#btn span').css('backgroundColor', '#000');
         }else{
             $('#headerWrap').css({
@@ -16,6 +21,11 @@ function scrollH(){
                 position: 'absolute'
             });
             $('#headerWrap h1>img').attr('src', './images/logo.png');
+            $('#headerWrap nav>ul>li>a').css('color', '#dadada').hover(function(){
+                $(this).css('color', '#fff');
+            }, function(){
+                $(this).css('color', '#dadada');
+            });
             $('#btn span').css('backgroundColor', '#fff');
         }
     })
