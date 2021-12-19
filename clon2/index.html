@@ -56,7 +56,7 @@
         <div id="box01">
             <article>
                 <ul>
-                    <li>
+                    <li class="first">
                         <div class="textWrap">
                             <div class="textBox">
                                 <h1><strong>상상의 공간을 만들다</strong></h1>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="second">
                         <div class="textWrap">
                             <div class="textBox">
                                 <h1>고객의<strong>소중한 공간</strong>을 감동으로 채워줄</h1>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="third">
                         <div class="textWrap">
                             <div class="textBox">
                                 <h1><strong>합리적인 가격</strong>으로</h1>
@@ -85,8 +85,8 @@
                         </div>
                     </li>
                 </ul>
-                <div id="left"><i class="fas fa-chevron-circle-left"></i></div>
-                <div id="right"><i class="fas fa-chevron-circle-right"></i></div>
+                <div class="left btn"><i class="fas fa-angle-left"></i></div>
+                <div class="right btn"><i class="fas fa-angle-right"></i></div>
             </article>
         </div>
         <!-- box02 -->
@@ -199,9 +199,15 @@
 
     <script>
         $(function () {
+            scrollH();
+
             slidr();
 
             navBtn();
+
+            $(window).on('resize', function(){
+                window.location.reload();
+            })
         });
     </script>
     <!-- <script src="js/jquery.slim.min.js"></script> -->

@@ -147,6 +147,7 @@ p#btn span:nth-child(4){top: 66%;}
     overflow: hidden;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 #box01 ul{
@@ -160,10 +161,25 @@ p#btn span:nth-child(4){top: 66%;}
 #box01 ul>li{
     width: 100%;
     height: 100%;
-    position: relative;
     z-index: 100;
     background: no-repeat 50% 50% rgba(0, 0, 0, .23);
     background-blend-mode: multiply;
+}
+
+#box01 .btn{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 500;
+    font-size: 2.1em;
+    color: #fff;
+}
+
+#box01 .left{
+    left: 0;
+}
+#box01 .right{
+    right: 0;
 }
 
 #box01 .textWrap{
@@ -196,43 +212,47 @@ p#btn span:nth-child(4){top: 66%;}
     color: #000;
 }
 
-#box01 ul>li:nth-child(1) h1{
+#box01 ul>li.first h1{
     padding-top: 1.5em;
     color: #fff;
     font-size: 4em;
 }
-#box01 ul>li:nth-child(1) h3{
+#box01 ul>li.first h3{
     padding: 1.8em 0;
     color: #fff;
     font-size: 1.8em;
     font-weight: 300;
 }
 
-#box01 ul>li:nth-child(2) h1{
-    font-size: 4em;
+#box01 ul>li.second h1{
+    font-size: 3em;
+    padding-top: 2em;
     color: #fff;
-    line-height: 1.8em;
 }
-#box01 ul>li:nth-child(2) p{
+#box01 ul>li.second h1:nth-child(2),
+#box01 ul>li.second h1:nth-child(3){
+    padding: 0;
+}
+#box01 ul>li.second p{
     padding-top: 3.6em;
 }
 
-#box01 ul>li:nth-child(3) h1{
-    font-size: 4em;
+#box01 ul>li.third h1{
+    font-size: 3em;
     color: #fff;
     font-weight: 500;
-    line-height: 2em;
+    padding-top: 2em;
 }
-#box01 ul>li:nth-child(3) h1:first-child{
-    padding-top: .8em;
+#box01 ul>li.third h1:nth-child(2){
+    padding: 0;
 }
-#box01 ul>li:nth-child(3) h3{
+#box01 ul>li.third h3{
     color: #fff;
     font-size: 2em;
     font-weight: 300;
     padding: 1em 0;
 }
-#box01 ul>li:nth-child(3) h3>span{
+#box01 ul>li.third h3>span{
     color: rgb(250, 197, 28);
     font-weight: bold;
 }
