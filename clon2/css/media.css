@@ -11,6 +11,10 @@
     }
 
     /* header */
+    #box01 .textWrap{
+        padding: 14em 0;
+    }
+
     #headerWrap header h1{
         float: none;
         text-align: center;
@@ -129,6 +133,9 @@
     #btn{display: block;}
 
     /* box01 */
+    #box01 .textWrap{
+        padding: 16em 0;
+    }
     #box01 ul>li:nth-child(1) h1 {padding-top: 0;}
 
     /* box03 */
