@@ -460,7 +460,7 @@ transform:rotate(-45deg) translateX(0%);
 #modal>div>h4{
     text-align:center;
     /* 16~18 본문, 24px , 제목 24 -> 56 */
-    font:bold 18px '나눔고딕',sans-seriif;
+    font:bold 18px '나눔고딕',sans-serif;
     color:#666;
     margin-bottom:36px;
 }

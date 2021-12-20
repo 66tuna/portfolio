@@ -8,7 +8,6 @@ function scrollH(){
                 position: 'fixed'
             });
             $('#headerWrap h1>img').attr('src', './images/logoB.png');
-            $('#headerWrap nav').css('backgroundColor', '#fff');
             $('#headerWrap nav>ul>li>a').css('color', '#545454').hover(function(){
                 $(this).css('color', '#000');
             }, function(){
@@ -22,8 +21,7 @@ function scrollH(){
                 position: 'absolute'
             });
             $('#headerWrap h1>img').attr('src', './images/logo.png');
-            $('#headerWrap nav').css('backgroundColor', '#5e5e5e');
-            $('#headerWrap nav>ul>li>a').css('color', '#dadada').hover(function(){
+            $('#headerWrap li>a').css('color', '#dadada').hover(function(){
                 $(this).css('color', '#fff');
             }, function(){
                 $(this).css('color', '#dadada');
