@@ -569,13 +569,14 @@ header ul li a{
 }
 
 #box06 ul li{
-    width: 16.47446457990115%/* 200px */;
-    height: 17.29818780889621%/* 210px */;
+    width: 200px;
+    height: 210px;
     margin: 0 1em 2em;
 }
 
 #box06 ul img{
     width: 100%;
+    height: 100%;
 }
 
 /* footer */
