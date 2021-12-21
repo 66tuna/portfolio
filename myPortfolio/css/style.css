@@ -294,7 +294,7 @@ p#btn span:nth-child(5){top: 88%;}
 #all{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 #all>figure{
     width: 33.3333%;
@@ -316,10 +316,10 @@ p#btn span:nth-child(5){top: 88%;}
     display: none;
     position: absolute;
     /* top jquery 계산식 */
-    top: 50%;
-    width: 35px;
-    height: 35px;
+    top: 65%;
+    padding: .8em;
     background-color: red;
+    color: #fff;
 }
 /* box04 */
 #box04{
