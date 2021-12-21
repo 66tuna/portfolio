@@ -318,8 +318,8 @@ p#btn span:nth-child(5){top: 88%;}
     /* top jquery 계산식 */
     top: 65%;
     padding: .8em;
-    background-color: red;
-    color: #fff;
+    color: #000;
+    cursor: pointer;
 }
 /* box04 */
 #box04{

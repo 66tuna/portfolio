@@ -51,8 +51,9 @@ function gallery(){
     // 준비하기
     let figureW = $('#all>figure').width();
     console.log(figureW);
-    // $('#all>figure:first').appendTo('#all');
     $('#all>figure:last').prependTo('#all');
+    $('#all>figure:first').clone().appendTo();
+    // $('#all').html($('#show').clone());
     $('#all').css('margin-left',  `-${figureW}px`);
 
     //.left .right
